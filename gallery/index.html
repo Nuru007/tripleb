@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery | Tripleb</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#3e0020",
+                    "secondary-fixed-dim": "#d9b9ff",
+                    "on-tertiary-fixed-variant": "#5b4300",
+                    "on-surface": "#151935",
+                    "on-tertiary-fixed": "#261a00",
+                    "tertiary-fixed": "#ffdf9e",
+                    "inverse-primary": "#ffb0cc",
+                    "inverse-surface": "#2a2e4b",
+                    "tertiary-fixed-dim": "#f2bf48",
+                    "secondary-container": "#cca4ff",
+                    "outline-variant": "#dfbec8",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#584048",
+                    "surface-container-high": "#e6e6ff",
+                    "surface-container-low": "#f4f2ff",
+                    "outline": "#8b7078",
+                    "primary": "#b5106a",
+                    "surface-bright": "#fbf8ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#d5d7fd",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#583486",
+                    "surface": "#fbf8ff",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#dfe0ff",
+                    "on-tertiary-container": "#090500",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#ffd9e4",
+                    "secondary-fixed": "#eedcff",
+                    "on-background": "#151935",
+                    "error": "#ba1a1a",
+                    "background": "#fbf8ff",
+                    "on-secondary-fixed": "#2a0054",
+                    "primary-container": "#d63384",
+                    "primary-fixed-dim": "#ffb0cc",
+                    "surface-tint": "#b5106b",
+                    "surface-variant": "#dfe0ff",
+                    "on-primary-container": "#ffffff",
+                    "surface-container": "#edecff",
+                    "tertiary": "#785900",
+                    "tertiary-container": "#977100",
+                    "on-primary-fixed-variant": "#8d0051",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f0efff",
+                    "on-secondary-container": "#583486",
+                    "secondary": "#714ca0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-auto-rows: 200px;
+            gap: 2rem;
+        }
+        .masonry-item-tall { grid-row: span 2; }
+        .masonry-item-wide { grid-column: span 2; }
+    </style>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-surface font-body text-on-surface overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-white/70 backdrop-blur-xl no-border shadow-[0_12px_40px_0_rgba(21,25,53,0.06)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-slate-900 font-headline">
+                <img src="/tripleb.png" alt="Tripleb Logo" class="h-16 md:h-20 w-auto object-contain">
+            </div>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] tracking-tighter">
+<a class="text-slate-600 font-medium hover:text-pink-600 transition-colors" href="/">Home</a>
+<a class="text-slate-600 font-medium hover:text-pink-600 transition-colors" href="/who_we_are/">Who We Are</a>
+<a class="text-pink-600 font-bold border-b-2 border-pink-600 pb-1" href="/gallery/">Gallery</a>
+<a class="text-slate-600 font-medium hover:text-pink-600 transition-colors" href="/contact_us/">Contact Us</a>
+</div>
+<a href="/contact_us/" class="bg-gradient-to-r from-primary to-primary-container text-white px-8 py-3 rounded-full font-bold text-sm tracking-wide hover:opacity-80 active:scale-95 transition-all">
+                Support Us
+            </a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="max-w-screen-2xl mx-auto px-12 pt-20 pb-32">
+<!-- Header Section -->
+<header class="mb-24 max-w-4xl">
+<span class="inline-flex items-center px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-xs font-bold uppercase tracking-widest mb-6">Visual Impact</span>
+<h1 class="text-7xl font-headline font-extrabold tracking-tighter text-on-surface mb-6 leading-[1.1]">The Texture of Change.</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed font-body max-w-2xl">
+                A curated sequence of human progress. Each frame captures the intersection of empathy and action within the global communities we serve.
+            </p>
+</header>
+<!-- Gallery Grid (Asymmetric Bento/Masonry Hybrid) -->
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-6 md:grid-rows-3 gap-8 min-h-[1400px]">
+<!-- Item 1: Wide Focus -->
+<div class="md:col-span-2 md:row-span-1 group relative overflow-hidden rounded-2xl bg-surface-container-low transition-all duration-500 hover:shadow-[0_12px_40px_0_rgba(21,25,53,0.1)]">
+<img alt="Unity" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of diverse group of hands joined together in a circle, warm sunlight filtering through fingers, representing unity and community support." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeSUNk6Jhlv5YnmR-6TSvdicCxCeQ4Z0JU7yE-zBwLkXw0W6fhVcL3U1vveNxlKQUp8ttOBgb7jFfS_B0AwsjeL1qI4kLDjwoBTC_RToIcRzLb8RRB1x6oUP-oj6Rn2SvzF9xHvu-4fGTKwM-kv2-jwisfAhGHupBs68Qf1PfLkdrxQ8fBgNh4MrJ01EbmwF928Kw-TOXSSWRbQSKavgoh6dLtaK715yfeYqzFu0IbBPkeIxBeaWtxMrRjuQ-N6ppRkgemxKvGcqo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
+<h3 class="text-surface-container-lowest text-2xl font-bold font-headline">Collective Resonance</h3>
+<p class="text-surface-variant/90 font-label">Community Building — Lagos, 2024</p>
+</div>
+</div>
+<!-- Item 2: Tall Profile -->
+<div class="md:col-span-1 md:row-span-2 group relative overflow-hidden rounded-2xl bg-surface-container-low transition-all duration-500 hover:shadow-[0_12px_40px_0_rgba(21,25,53,0.1)]">
+<img alt="Education" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Portrait of a young student in a vibrant classroom, smiling brightly with colorful art supplies in the background, soft bokeh and natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8_ilgtvKMRXwMpxRmgldnbBk6Gw9QJF5HbYFo8BHoq-x_C_hOQ-WHWF30eVZKRja9dRe55A-bEzIz6ot2hpAMFBltTPxVKFZYdTuv21xZVHjmMBb2wGKzmhsdsRmqRsANeUeCMCZWn1nIGUQF3d-7e2elNe4RnGBHlEn9Nwg-kQJJzqTTlu_5bjynJzoWTZoehkbBtKlbryxRkqJhvjbQRsbc6E_V_ogGmCJvvik3-JixiibmriLOEh-GbdUgrRdMxMfhdhyZ8nA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="text-surface-container-lowest text-xl font-bold font-headline">The Future Gaze</h3>
+<p class="text-surface-variant/90 font-label">Literacy Initiative</p>
+</div>
+</div>
+<!-- Item 3: Square Detail -->
+<div class="md:col-span-1 md:row-span-1 group relative overflow-hidden rounded-2xl bg-surface-container-low transition-all duration-500 hover:shadow-[0_12px_40px_0_rgba(21,25,53,0.1)]">
+<img alt="Healthcare" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of a doctor gently holding an elderly patient's hand in a bright clinical setting, emphasis on empathy and care, clean medical aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4j4wfb-jK8qd8gpJ43aaO1IIaQctmE2gyEDHYOUQXrDQm6xjPXTH5pAeD7iS7c5M6s_U17_6OGsCH8uQ-v6YRKrhuNtkd5BMy1x38EkwNUSDqmAnrnTERkrNEGoHhJ2ks75Au9K2vts_YaEGtyFL4HYBQRd76SCKfohq6zqli7GQjhsc8mTbrkUh606Jx6GxUmRkZGfF5-_EaU9pUAIfdlWPutm3oKkQ4r6UnwOX-OX8RuhHxTpZ8fLdF0a-YVcRhKueus2ObgjQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="text-surface-container-lowest text-xl font-bold font-headline">Sanctuary of Care</h3>
+<p class="text-surface-variant/90 font-label">Health Access</p>
+</div>
+</div>
+<!-- Item 4: Large Asymmetric -->
+<div class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-2xl bg-surface-container-low transition-all duration-500 hover:shadow-[0_12px_40px_0_rgba(21,25,53,0.1)]">
+<img alt="Sustainability" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Aerial shot of a lush community garden in the heart of an urban environment, vibrant green rows of vegetables and people working together, soft morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2QyFu1ClFahDV-uGJUS8Md9z0i7KJCd-LUHJPtn8p6wM86VuqyT1dU0Qk7-lr2eC75-hAMrSCHQVx_aw18PDoIVB9EQIHsEdJT8LF8nOHV-Mp3de0u_XJ4tGh2Ylc5PiwrFvxEyPuOGnZDEDDSv1-IsZz9ak42ViJolhgQCnAkOhGrDtzL_8Lqwq_-sUlo5hIaJYChMT0X5nm5mHGaOOqWdnumvsgmtapQ57Mm25nEkZYgonV9Jd9LJfjspNR0US6_QM9Hq83T5I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="inline-block w-fit px-4 py-1 mb-4 rounded-full bg-primary/20 text-white backdrop-blur-md font-label text-xs font-bold uppercase tracking-widest">Global Reach</span>
+<h3 class="text-surface-container-lowest text-4xl font-bold font-headline tracking-tighter mb-2">Sustainable Ecosystems</h3>
+<p class="text-surface-variant/90 font-label max-w-md">How urban agriculture is redefining metropolitan food security across three continents.</p>
+</div>
+</div>
+<!-- Item 5: Small Action -->
+<div class="md:col-span-1 md:row-span-1 group relative overflow-hidden rounded-2xl bg-surface-container-low transition-all duration-500 hover:shadow-[0_12px_40px_0_rgba(21,25,53,0.1)]">
+<img alt="Joy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Candid moment of a volunteer laughing while painting a mural with children, vibrant colors, messy hands, joyful atmosphere, high-end photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcq4wby4979LsoGlnsa50gu3CltSIYqrZ3bWnWT6fNwWGDCm0oK8jd8YSOpuFvPasYxrpYHRTg4RvEsyJ1QTysHhHjBNJtGS9sww9AtASglBBdSffr0LcGyAFehCzg7JTwb0_6snPnNUYGXvCf1G8iaqEeRTatern3S4-B-WbC5aaurOtcli-H7xNl9VEgt7nKELggLiHV09BcsgyBF2rcxyO5zvkX2PUoxaY7TOLkVT5Y_zmThLNtTJ2cyrXuelML73RikL2vyHI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="text-surface-container-lowest text-xl font-bold font-headline">Radical Joy</h3>
+<p class="text-surface-variant/90 font-label">Youth Outreach</p>
+</div>
+</div>
+<!-- Item 6: Clean Minimal -->
+<div class="md:col-span-1 md:row-span-1 group relative overflow-hidden rounded-2xl bg-surface-container-low transition-all duration-500 hover:shadow-[0_12px_40px_0_rgba(21,25,53,0.1)]">
+<img alt="Water" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Wide landscape of a newly installed clean water well in a remote village, clear blue sky, minimalist composition, serene and hopeful mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUT_oocRwEgHdPc8JdO9rvMDXlmxjwMGxW8qEf-mqgoJ8gR_xL2DHnqKmqBNBS0sZiVU4LFLDIWjYmM0Fg4OHCbMIteNcL8UiMkh-hYTIEjNu-3rQF3H374Iqbljw8l2_7qs39RSUA7258jMQrISdLtLOLNckcRfH6uifoiy93h82kyJos_yLiZYVNwKRkt3TBpW_jNVQ1l0YBsV2tO8KiYASLRZiR6xaX3BcuQS-A7_68EMaimNDbz17UyGhxZXJUSGwt8bviffM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="text-surface-container-lowest text-xl font-bold font-headline">Fluid Progress</h3>
+<p class="text-surface-variant/90 font-label">Infrastructure Development</p>
+</div>
+</div>
+</div>
+<!-- Pagination / Load More (Editorial Style) -->
+<div class="mt-32 flex flex-col items-center gap-6">
+<p class="font-label text-on-surface-variant text-sm tracking-widest uppercase">Viewing 01 — 06 of 42 Stories</p>
+<button class="flex items-center gap-3 px-12 py-5 rounded-full border border-outline-variant/30 hover:bg-surface-container-high transition-all group">
+<span class="font-bold text-on-surface font-headline tracking-tighter">Load More Impacts</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 w-full font-['Inter'] text-sm leading-relaxed flex flex-col md:flex-row justify-between items-center px-12 py-12 gap-8 border-t border-slate-200/10">
+<div class="flex flex-col gap-2">
+<div class="text-lg font-bold text-slate-900">Tripleb</div>
+<p class="text-slate-500">© 2024 Tripleb. Digital First, Human Always.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-pink-600 transition-colors" href="/contact_us/">Impact Reports</a>
+<a class="text-slate-500 hover:text-pink-600 transition-colors" href="/contact_us/">Privacy Policy</a>
+<a class="text-slate-500 hover:text-pink-600 transition-colors" href="/contact_us/">Careers</a>
+<a class="text-slate-500 hover:text-pink-600 transition-colors" href="/contact_us/">Terms of Service</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary transition-colors" href="/contact_us/">
+<span class="material-symbols-outlined text-xl" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary transition-colors" href="/contact_us/">
+<span class="material-symbols-outlined text-xl" data-icon="diversity_3">diversity_3</span>
+</a>
+</div>
+</footer>
+    <script src="/main.js"></script>
+</body></html>
