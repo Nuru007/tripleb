@@ -102,7 +102,7 @@
             -webkit-backdrop-filter: blur(20px);
         }
     </style>
-  <link rel="stylesheet" crossorigin href="/assets/style-BBguaLky.css">
+  <link rel="stylesheet" crossorigin href="/assets/style-DylJL9le.css">
 </head>
 <body class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- TopNavBar -->
@@ -111,7 +111,7 @@
 <div class="text-2xl font-bold tracking-tighter text-on-surface font-headline" style="">
                 <img src="/tripleb.png" alt="Tripleb Logo" class="h-16 md:h-20 w-auto object-contain">
             </div>
-<nav class="hidden md:flex items-center gap-10">
+<nav class="hidden md:flex items-center gap-8">
 <a class="text-pink-600 font-bold border-b-2 border-pink-600 pb-1 font-headline tracking-tighter" href="/" style="">Home</a>
 <a class="text-slate-600 font-medium hover:text-pink-600 transition-colors font-headline tracking-tighter" href="/who_we_are/" style="">Who We Are</a>
 <a class="text-slate-600 font-medium hover:text-pink-600 transition-colors font-headline tracking-tighter" href="/gallery/" style="">Gallery</a>
@@ -121,14 +121,24 @@
 <a href="/contact_us/" class="bg-impact-gradient text-white px-8 py-3 rounded-full font-bold text-sm tracking-tight hover:opacity-80 transition-all active:scale-95 duration-200" style="">
                     Support Us
                 </a>
+                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-on-surface hover:text-primary transition-colors focus:outline-none">
+                    <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">menu</span>
+                </button>
 </div>
 </div>
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl shadow-[0_20px_40px_0_rgba(21,25,53,0.1)] border-t border-slate-200/50 flex-col items-center py-8 gap-6 z-50">
+        <a class="text-slate-800 font-bold text-xl hover:text-pink-600 transition-colors font-headline" href="/">Home</a>
+        <a class="text-slate-800 font-bold text-xl hover:text-pink-600 transition-colors font-headline" href="/who_we_are/">Who We Are</a>
+        <a class="text-slate-800 font-bold text-xl hover:text-pink-600 transition-colors font-headline" href="/gallery/">Gallery</a>
+        <a class="text-slate-800 font-bold text-xl hover:text-pink-600 transition-colors font-headline" href="/contact_us/">Contact Us</a>
+    </div>
 </header>
 <main>
 <!-- Hero Section -->
-<section class="relative overflow-hidden pt-12 pb-24 md:pt-24 md:pb-32 px-6 md:px-12 max-w-screen-2xl mx-auto reveal-on-scroll">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-<div class="space-y-8">
+<section class="relative overflow-hidden pt-6 pb-10 md:pt-10 md:pb-16 px-6 md:px-12 max-w-screen-2xl mx-auto reveal-on-scroll">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="space-y-6">
 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container text-sm font-bold tracking-tight" style="">
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">colors_spark</span>
                         Curating a Better Tomorrow
@@ -154,7 +164,7 @@
 <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
 </div>
 <!-- Floating Stat Cards -->
-<div class="absolute -left-8 top-1/4 bg-surface-container-lowest p-6 rounded-2xl shadow-[0_12px_40px_0_rgba(21,25,53,0.06)] flex items-center gap-4 animate-float border border-outline-variant/10">
+<div class="absolute -left-8 top-1/4 bg-surface-container-lowest p-6 rounded-2xl shadow-[0_12px_40px_0_rgba(21,25,53,0.06)] hidden md:flex items-center gap-4 animate-float border border-outline-variant/10">
 <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
 <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">school</span>
 </div>
@@ -185,8 +195,8 @@
 </div>
 </section>
 <!-- Impact Highlights Strip -->
-<section class="bg-secondary-container/20 py-16 px-6 md:px-12 reveal-on-scroll">
-<div class="max-w-screen-xl mx-auto flex flex-wrap justify-center md:justify-between gap-12">
+<section class="bg-secondary-container/20 py-12 px-6 md:px-12 reveal-on-scroll">
+<div class="max-w-screen-xl mx-auto flex flex-wrap justify-center md:justify-between gap-8">
 <div class="flex flex-col items-center text-center space-y-2 group cursor-default">
 <span class="material-symbols-outlined text-4xl text-secondary mb-2" style="font-variation-settings: &quot;FILL&quot; 0;">public</span>
 <h3 class="text-4xl font-extrabold tracking-tighter" style="">12+</h3>
@@ -210,78 +220,94 @@
 </div>
 </section>
 <!-- What We Do Grid -->
-<section class="py-24 px-6 md:px-12 max-w-screen-2xl mx-auto reveal-on-scroll">
-<div class="mb-16">
+<section class="py-12 md:py-12 px-6 md:px-12 max-w-screen-2xl mx-auto reveal-on-scroll">
+<div class="mb-6">
 <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter font-headline mb-4" style="">What We Do</h2>
 <p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed" style="">Our focus is on creating sustainable ecosystems of support that address the most pressing social challenges of our time.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <!-- Card 1 -->
-<div class="group premium-card bg-surface-container-lowest p-12 rounded-[2.5rem] hover:bg-primary/5">
-<div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary mb-8 transition-transform group-hover:scale-110">
-<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">child_care</span>
-</div>
-<h4 class="text-xl font-bold mb-4 font-headline" style="">Kids Development</h4>
-<p class="text-on-surface-variant leading-relaxed mb-6" style="">Nurturing the next generation through holistic play-based learning and psychological support systems.</p>
-
+<div class="group premium-card bg-surface-container-lowest p-8 rounded-[1.5rem] relative overflow-hidden">
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-primary to-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"></div>
+    <!-- Content -->
+    <div class="relative z-10 transition-colors duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary mb-6 transition-all group-hover:scale-110 group-hover:bg-white/20 group-hover:text-white">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">child_care</span>
+        </div>
+        <h4 class="text-xl font-bold mb-4 font-headline group-hover:text-white transition-colors duration-300">Kids Development</h4>
+        <p class="text-on-surface-variant leading-relaxed mb-6 group-hover:text-white/90 transition-colors duration-300">Nurturing the next generation through holistic play-based learning and psychological support systems.</p>
+    </div>
 </div>
 <!-- Card 2 -->
-<div class="group premium-card bg-surface-container-lowest p-12 rounded-[2.5rem] hover:bg-secondary/5">
-<div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary mb-8 transition-transform group-hover:scale-110">
-<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">female</span>
-</div>
-<h4 class="text-xl font-bold mb-4 font-headline" style="">Women Empowerment</h4>
-<p class="text-on-surface-variant leading-relaxed mb-6" style="">Unlocking potential through vocational training, entrepreneurship mentorship, and health advocacy.</p>
-
+<div class="group premium-card bg-surface-container-lowest p-8 rounded-[1.5rem] relative overflow-hidden">
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-secondary to-secondary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"></div>
+    <!-- Content -->
+    <div class="relative z-10 transition-colors duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-secondary mb-6 transition-all group-hover:scale-110 group-hover:bg-white/20 group-hover:text-white">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">female</span>
+        </div>
+        <h4 class="text-xl font-bold mb-4 font-headline group-hover:text-white transition-colors duration-300">Women Empowerment</h4>
+        <p class="text-on-surface-variant leading-relaxed mb-6 group-hover:text-white/90 transition-colors duration-300">Unlocking potential through vocational training, entrepreneurship mentorship, and health advocacy.</p>
+    </div>
 </div>
 <!-- Card 3 -->
-<div class="group premium-card bg-surface-container-lowest p-12 rounded-[2.5rem] hover:bg-tertiary/5">
-<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary mb-8 transition-transform group-hover:scale-110">
-<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">auto_stories</span>
-</div>
-<h4 class="text-xl font-bold mb-4 font-headline" style="">Education &amp; Learning</h4>
-<p class="text-on-surface-variant leading-relaxed mb-6" style="">Bridging the digital divide with tech-enabled classrooms and community-driven literacy programs.</p>
-
+<div class="group premium-card bg-surface-container-lowest p-8 rounded-[1.5rem] relative overflow-hidden">
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-tertiary to-tertiary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"></div>
+    <!-- Content -->
+    <div class="relative z-10 transition-colors duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary mb-6 transition-all group-hover:scale-110 group-hover:bg-white/20 group-hover:text-white">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+        </div>
+        <h4 class="text-xl font-bold mb-4 font-headline group-hover:text-white transition-colors duration-300">Education &amp; Learning</h4>
+        <p class="text-on-surface-variant leading-relaxed mb-6 group-hover:text-white/90 transition-colors duration-300">Bridging the digital divide with tech-enabled classrooms and community-driven literacy programs.</p>
+    </div>
 </div>
 <!-- Card 4 -->
-<div class="group premium-card bg-surface-container-lowest p-12 rounded-[2.5rem] hover:bg-on-surface/5">
-<div class="w-14 h-14 rounded-2xl bg-surface-container-highest flex items-center justify-center text-on-surface mb-8 transition-transform group-hover:scale-110">
-<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">handshake</span>
-</div>
-<h4 class="text-xl font-bold mb-4 font-headline" style="">Community Support</h4>
-<p class="text-on-surface-variant leading-relaxed mb-6" style="">Strengthening local bonds through shared resources, crisis intervention, and urban development.</p>
-
+<div class="group premium-card bg-surface-container-lowest p-8 rounded-[1.5rem] relative overflow-hidden">
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-on-surface to-on-surface/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"></div>
+    <!-- Content -->
+    <div class="relative z-10 transition-colors duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-surface-container-highest flex items-center justify-center text-on-surface mb-6 transition-all group-hover:scale-110 group-hover:bg-white/20 group-hover:text-white">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">handshake</span>
+        </div>
+        <h4 class="text-xl font-bold mb-4 font-headline group-hover:text-white transition-colors duration-300">Community Support</h4>
+        <p class="text-on-surface-variant leading-relaxed mb-6 group-hover:text-white/90 transition-colors duration-300">Strengthening local bonds through shared resources, crisis intervention, and urban development.</p>
+    </div>
 </div>
 </div>
 </section>
 
 <!-- Dynamic Image Grid Section -->
-<section class="py-24 px-6 md:px-12 bg-surface-container-low reveal-on-scroll">
+<section class="py-12 md:py-12 px-6 md:px-12 bg-surface-container-low reveal-on-scroll">
     <div class="max-w-screen-xl mx-auto">
-        <div class="text-center mb-16 space-y-4">
+        <div class="text-center mb-6 space-y-4">
             <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter font-headline text-on-surface">Moments of Impact</h2>
             <p class="text-xl text-on-surface-variant font-light max-w-2xl mx-auto">A glimpse into the communities we empower and the progress we curate.</p>
         </div>
         
         <div class="dynamic-grid-wrapper">
             <!-- 9 Images -->
-            <div class="dynamic-grid-item premium-image-hover"><img src="https://images.unsplash.com/photo-1593113514676-5f01cec7653c?auto=format&fit=crop&w=600&q=80" alt="Impact 1"></div>
-            <div class="dynamic-grid-item premium-image-hover"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" alt="Impact 2"></div>
-            <div class="dynamic-grid-item premium-image-hover"><img src="https://images.unsplash.com/photo-1542810634-71277d95dc8c?auto=format&fit=crop&w=600&q=80" alt="Impact 3"></div>
-            <div class="dynamic-grid-item premium-image-hover"><img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=600&q=80" alt="Impact 4"></div>
-            <div class="dynamic-grid-item premium-image-hover"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=600&q=80" alt="Impact 5"></div>
-            <div class="dynamic-grid-item premium-image-hover"><img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=600&q=80" alt="Impact 6"></div>
-            <div class="dynamic-grid-item premium-image-hover"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=600&q=80" alt="Impact 7"></div>
-            <div class="dynamic-grid-item premium-image-hover"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Impact 8"></div>
-            <div class="dynamic-grid-item premium-image-hover"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=600&q=80" alt="Impact 9"></div>
+            <div class="dynamic-grid-item premium-image-hover"><img src="https://picsum.photos/600/600?random=1" alt="Impact 1"></div>
+            <div class="dynamic-grid-item premium-image-hover"><img src="https://picsum.photos/600/600?random=2" alt="Impact 2"></div>
+            <div class="dynamic-grid-item premium-image-hover"><img src="https://picsum.photos/600/600?random=3" alt="Impact 3"></div>
+            <div class="dynamic-grid-item premium-image-hover"><img src="https://picsum.photos/600/600?random=4" alt="Impact 4"></div>
+            <div class="dynamic-grid-item premium-image-hover"><img src="https://picsum.photos/600/600?random=5" alt="Impact 5"></div>
+            <div class="dynamic-grid-item premium-image-hover"><img src="https://picsum.photos/600/600?random=6" alt="Impact 6"></div>
+            <div class="dynamic-grid-item premium-image-hover"><img src="https://picsum.photos/600/600?random=7" alt="Impact 7"></div>
+            <div class="dynamic-grid-item premium-image-hover"><img src="https://picsum.photos/600/600?random=8" alt="Impact 8"></div>
+            <div class="dynamic-grid-item premium-image-hover"><img src="https://picsum.photos/600/600?random=9" alt="Impact 9"></div>
         </div>
     </div>
 </section>
 
 </main>
 <!-- Footer -->
-<footer class="w-full bg-slate-50 dark:bg-slate-950 px-6 md:px-12 py-16 gap-8 border-t border-slate-200/10">
-<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+<footer class="w-full bg-slate-50 dark:bg-slate-950 px-6 md:px-12 py-12 gap-8 border-t border-slate-200/10">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
 <div class="flex flex-col items-center md:items-start gap-4">
 <div class="text-lg font-bold text-slate-900 font-headline" style="">Tripleb</div>
 <p class="font-['Inter'] text-sm leading-relaxed text-slate-500 max-w-xs text-center md:text-left" style="">
